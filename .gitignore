@@ -1,8 +1,4 @@
+# Compiled class file
+*.class
 .idea
-out
-target
-*.iml
-logs
-*.patch
-
 

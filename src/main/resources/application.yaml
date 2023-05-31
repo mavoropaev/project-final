@@ -8,6 +8,7 @@ app:
     max-pool-size: 100
 
 spring:
+
   jpa:
     show-sql: true
     open-in-view: false
@@ -25,8 +26,12 @@ spring:
         jdbc.batch_size: 20
   datasource:
     url: jdbc:postgresql://localhost:5432/jira
+    #username: ${LOGIN_DB_PSQL}
+    #password: ${PASSWORD_DB_PSQL}
     username: jira
     password: JiraRush
+    #username: ${LOGIN_DB_POSTGRESQL}
+    #password: ${PASSWORD_DB_POSTGRESQL}
 
   liquibase:
     changeLog: "classpath:db/changelog.sql"
@@ -108,6 +113,10 @@ spring:
           starttls:
             enable: true
           auth: true
+          # myAdd
+          ssl:
+            trust: smtp.gmail.com
+          # myAdd
     host: smtp.gmail.com
     username: jira4jr@gmail.com
     password: zdfzsrqvgimldzyj
