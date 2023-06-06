@@ -26,10 +26,10 @@ spring:
         jdbc.batch_size: 20
   datasource:
     url: jdbc:postgresql://localhost:5432/jira
-    #username: ${LOGIN_DB_PSQL}
-    #password: ${PASSWORD_DB_PSQL}
-    username: jira
-    password: JiraRush
+    username: ${LOGIN_DB_PSQL}
+    password: ${PASSWORD_DB_PSQL}
+    #username: jira
+    #password: JiraRush
     #username: ${LOGIN_DB_POSTGRESQL}
     #password: ${PASSWORD_DB_POSTGRESQL}
 
