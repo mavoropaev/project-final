@@ -24,5 +24,4 @@ public class TaskController {
         return taskMapper.toTo(taskService.addToTags(id, tags));
     }
 
-
 }

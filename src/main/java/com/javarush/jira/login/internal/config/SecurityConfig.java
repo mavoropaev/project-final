@@ -72,7 +72,8 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests()
                 .requestMatchers("/view/unauth/**", "/ui/register/**", "/ui/password").anonymous()
-                .requestMatchers("/", "/doc", "/v3/api-docs/**", "/swagger-ui.html", "/swagger-ui/**", "/static/**", "/task/**").permitAll()
+                .requestMatchers("/", "/doc", "/v3/api-docs/**", "/swagger-ui.html",
+                        "/swagger-ui/**", "/static/**", "/task/**", "/activity/**").permitAll()
                 .requestMatchers("/ui/admin/**", "/view/admin/**").hasRole(Role.ADMIN.name())
                 .anyRequest().authenticated()
                 .and().formLogin().permitAll()

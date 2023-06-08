@@ -9,6 +9,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Size;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.Value;
 
 import java.time.LocalDateTime;
@@ -16,10 +17,10 @@ import java.time.LocalDateTime;
 @Value
 @EqualsAndHashCode(callSuper = true)
 public class ActivityTo extends BaseTo {
-    @NotNull
+    //@NotNull
     User author;
 
-    @NotNull
+    //@NotNull
     TaskTo task;
 
     @Nullable

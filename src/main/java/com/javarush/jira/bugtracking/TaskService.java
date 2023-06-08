@@ -14,6 +14,7 @@ import java.util.Optional;
 @Service
 public class TaskService extends BugtrackingService<Task, TaskTo, TaskRepository> {
     public TaskService(TaskRepository repository, TaskMapper mapper) {
+
         super(repository, mapper);
     }
 
